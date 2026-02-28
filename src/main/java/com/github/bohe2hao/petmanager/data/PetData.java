@@ -1,7 +1,6 @@
 package com.github.bohe2hao.petmanager.data;
 
 import static com.github.bohe2hao.petmanager.PetManager.PM_LOGGER;
-import static com.github.bohe2hao.petmanager.PetManager.debug;
 
 import com.github.bohe2hao.petmanager.PetManager;
 import com.github.bohe2hao.petmanager.others.PetOthers;
@@ -222,10 +221,8 @@ public class PetData extends SavedData {
     if (isTimeEnough || isDimensionChange) {
       PetInfo newInfo = updateInfo(info, pet);
       putInfoData(pet, newInfo);
-      debug("petmanager:Data Dirty,dimensionChange:" + isDimensionChange);
     } else if (isChangePos) {
       info.changePos(pet.chunkPosition());
-      debug("petmanager:Pos Dirty");
       setDirty();
     }
   }

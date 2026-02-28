@@ -13,12 +13,6 @@ public class PetManager {
   public static final String MODID = "petmanager";
   public static final Logger PM_LOGGER = LogUtils.getLogger();
 
-  public static boolean debugMode = true;
-
-  public static void debug(String content) {
-    if (debugMode) System.out.println(content);
-  }
-
   public PetManager(IEventBus modEventBus, ModContainer modContainer) {
     modContainer.registerConfig(ModConfig.Type.SERVER, Config.SPEC);
 

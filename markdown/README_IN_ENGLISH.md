@@ -2,6 +2,7 @@
 ![Cover Image](../pic/cover.png)
 ## Detailed Introduction
 Provides a universal pet terminal, similar to those in online games.
+The default key to open is R, which can be customized by the user.
 Features include:
 1. Records tamed pets
 2. Teleports pets to your current location
